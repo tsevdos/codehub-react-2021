@@ -1,0 +1,123 @@
+{
+  "stats": [
+    {
+      "id": "01",
+      "title": "students",
+      "amount": 1537
+    },
+    {
+      "id": "02",
+      "title": "courses",
+      "amount": 24
+    },
+    {
+      "id": "03",
+      "title": "instructors",
+      "amount": 36
+    },
+    {
+      "id": "04",
+      "title": "events",
+      "amount": 158
+    }
+  ],
+  "courses": [
+    {
+      "id": "01",
+      "title": "Certified Scrum Master®",
+      "imagePath": "/scrum.png",
+      "price": {
+        "normal": 1100,
+        "early_bird": 800
+      },
+      "dates": {
+        "start_date": "2019-09-27",
+        "end_date": "2019-09-28"
+      },
+      "duration": "2 days",
+      "open": true,
+      "instructors": ["01"],
+      "description": "<p>This <strong>innovative Scrum class</strong> won’t be like any other you’ve heard of, with an unconventional focus on the deeply human foundations at work in teams building stuff together.</p><p>This two-day seminar is designed to give aspiring and beginning ScrumMasters and team members the foundations of Scrum and Agile practice. Chock full of exercises, the seminar creates lasting memories and learnings you can carry through into your team so you can avoid common Agile pitfalls. The seminar is designed and taught by <strong>Jim Coplien</strong>, <strong>author of Organizational Patterns and Lean/Agile Process and Architecture Coach</strong>.</p>"
+    },
+    {
+      "id": "02",
+      "title": "User eXperience (UX) Research",
+      "imagePath": "/ui-ux.png",
+      "price": {
+        "normal": 500,
+        "early_bird": 450
+      },
+      "dates": {
+        "start_date": "2020-10-05",
+        "end_date": "2020-10-27"
+      },
+      "duration": "4 Fridays and 4 Saturdays",
+      "open": true,
+      "instructors": ["01", "02"],
+      "description": "<p>Do you want to <strong>design products based on opinions or based on evidence</strong>?</p><p>In this course you will learn how <strong>UX research</strong> builds products that users really need, can and want to use!</p>"
+    },
+    {
+      "id": "03",
+      "title": "Angular",
+      "imagePath": "/angular.png",
+      "price": {
+        "normal": 450,
+        "early_bird": 400
+      },
+      "dates": {
+        "start_date": "2020-10-12",
+        "end_date": "2020-10-18"
+      },
+      "duration": "2 Wednesdays and 3 Saturdays",
+      "open": true,
+      "instructors": ["02"],
+      "description": "<p>This code.learn program&nbsp;covers introductory and advanced <strong>Angular</strong> topics through extensive hands-on sessions and guidance from senior developers.</p>"
+    },
+    {
+      "id": "04",
+      "title": "React",
+      "imagePath": "/react.png",
+      "price": {
+        "normal": 500,
+        "early_bird": 450
+      },
+      "dates": {
+        "start_date": "2018-10-19",
+        "end_date": "2018-10-10"
+      },
+      "duration": "2 Fridays and 4 Saturdays",
+      "open": true,
+      "instructors": ["01"],
+      "description": "<p>This is a certified program by Athens Tech College, the first educational institution in Greece that specialises in computer science and ICT studies.</p><p>Participant’s registration (payment’s completion) implies full compliance and acceptance of Code.Learn Terms &amp; Conditions.</p>"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "01",
+      "gender": "male",
+      "name": {
+        "first": "John",
+        "last": "Tsevdos"
+      },
+      "email": "tsevdosjohn@gmail.com",
+      "dob": "1982-02-26",
+      "bio": "front-end developer from Athens, Greece",
+      "hobbies": ["football", "movies"],
+      "linkedin": "https://www.linkedin.com/sample"
+    },
+    {
+      "id": "02",
+      "gender": "male",
+      "name": {
+        "first": "Yiannis",
+        "last": "Nikolakopoulos"
+      },
+      "username": "tsevdos",
+      "email": "inikolakopoulos@codehub.gr",
+      "dob": "1977-05-19",
+      "bio": "Co-Founder Code.Hub",
+      "hobbies": ["movies"],
+      "linkedin": "https://www.linkedin.com/sample"
+    }
+  ]
+}

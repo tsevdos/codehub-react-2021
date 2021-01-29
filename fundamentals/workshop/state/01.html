@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const LikeCount = () => {
+        const [counter, setCounter] = React.useState(0);
+        const handleLike = () => {
+          setCounter((counter) => counter + 1);
+        };
+        const handleDislike = () => {
+          setCounter((counter) => counter - 1);
+        };
+
+        return (
+          <div>
+            <div className="emoji">💓 {counter}</div>
+            <button onClick={handleLike}>Like!</button>
+            <button onClick={handleDislike}>Dislike!</button>
+          </div>
+        );
+      };
+
+      ReactDOM.render(<LikeCount />, document.getElementById("app"));
+    </script>
+  </body>
+</html>

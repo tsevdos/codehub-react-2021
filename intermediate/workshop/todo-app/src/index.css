@@ -1,0 +1,18 @@
+body {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 1rem 0 1rem 1rem;
+}
+
+input,
+button {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,35 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById('app');
+
+    const MyComponent = (props) => {
+      return (
+        <div className="columns">
+          <div className="column">
+            <p className="has-background-primary has-text-white">First column</p>
+          </div>
+          <div className="column">
+            <p className="has-background-primary has-text-white">Second column</p>
+          </div>
+          <div className="column">
+            <p className="has-background-primary has-text-white">Third column</p>
+          </div>
+          <div className="column">
+            <p className="has-background-primary has-text-white">Fourth column</p>
+          </div>
+        </div>
+      )
+    };
+
+    ReactDOM.render(<MyComponent />, rootElement);
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+
+      const Avatar = (props) => {
+        return (
+          <div>
+            <h3>{props.username}</h3>
+            <img width="100" src={props.imgUrl} />
+            <p>My age is {props.age}</p>
+            <p>My hobbies are:</p>
+            <ul>
+              {props.hobbies.map((hobbie) => (
+                <li key={hobbie}>{hobbie}</li>
+              ))}
+            </ul>
+            <p>
+              I use {props.technologies.base} as a base and{" "}
+              {props.technologies.library} for the rest
+            </p>
+            {props.isOlympiakos ? (
+              <div>Ολυμπιακάρα</div>
+            ) : (
+              <div>Υπάρχουν και άλλες ομάδες;</div>
+            )}
+            <button onClick={props.handleClick}>Click me</button>
+          </div>
+        );
+      };
+
+      ReactDOM.render(
+        <Avatar
+          username="tsevdos"
+          age={37}
+          imgUrl="https://pbs.twimg.com/profile_images/1170277252858372097/zj_tU1kT_400x400.jpg"
+          isOlympiakos={true}
+          hobbies={["coding", "football", "movies"]}
+          technologies={{
+            base: "JavaScript",
+            library: "React",
+          }}
+          handleClick={() => console.log("Clicked!")}
+        />,
+        rootElement
+      );
+    </script>
+  </body>
+</html>

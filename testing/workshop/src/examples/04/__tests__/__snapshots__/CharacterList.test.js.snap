@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CharacterList /> renders correctly with snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      My title
+    </h1>
+    <hr />
+    <div>
+      <div
+        class="entry"
+      >
+        <h2>
+          John Tsevdos
+        </h2>
+        <p>
+          male
+        </p>
+        <button
+          type="primary"
+        >
+          edit 
+          John Tsevdos
+        </button>
+      </div>
+      <div
+        class="entry"
+      >
+        <h2>
+          Patricia Lebsack
+        </h2>
+        <p>
+          female
+        </p>
+        <button
+          type="primary"
+        >
+          edit 
+          Patricia Lebsack
+        </button>
+      </div>
+      <div
+        class="entry"
+      >
+        <h2>
+          Dennis Schulist
+        </h2>
+        <p>
+          male
+        </p>
+        <button
+          type="primary"
+        >
+          edit 
+          Dennis Schulist
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

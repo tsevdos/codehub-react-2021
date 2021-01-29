@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+
+      const User = ({ username }) => {
+        return (
+          <div>
+            {username ? (
+              <React.Fragment>Hello, {username}</React.Fragment>
+            ) : (
+              <React.Fragment>Hi stranger!</React.Fragment>
+            )}
+          </div>
+        );
+      };
+
+      ReactDOM.render(<User username="tsevdos" />, rootElement);
+    </script>
+  </body>
+</html>

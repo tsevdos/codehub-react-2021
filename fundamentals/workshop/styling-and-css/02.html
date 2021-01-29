@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css"
+    />
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      const firstParagraphStyle = {
+        padding: "0.5em 1em",
+        fontSize: "1.4em",
+        background: "hsl(217, 71%, 53%)",
+        color: "#fff"
+      };
+
+      const MyComponent = props => {
+        const columnclassName = "column";
+        const paragraphClassName = "has-background-primary has-text-white";
+
+        return (
+          <div className="columns">
+            <div className={columnclassName}>
+              <p style={firstParagraphStyle}>First column</p>
+            </div>
+            <div className={columnclassName}>
+              <p className={paragraphClassName}>Second column</p>
+            </div>
+            <div className={columnclassName}>
+              <p className={paragraphClassName}>Third column</p>
+            </div>
+            <div className={columnclassName}>
+              <p className={paragraphClassName}>Fourth column</p>
+            </div>
+          </div>
+        );
+      };
+
+      ReactDOM.render(<MyComponent active={3} />, rootElement);
+    </script>
+  </body>
+</html>

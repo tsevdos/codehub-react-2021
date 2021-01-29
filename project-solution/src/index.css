@@ -1,0 +1,16 @@
+.no-padding {
+  padding: 0;
+}
+
+.m-top {
+  margin-top: 2em;
+}
+
+.m-bottom {
+  margin-bottom: 2em;
+}
+
+.list-item {
+  min-height: 600px;
+  margin: 0 0 2rem;
+}

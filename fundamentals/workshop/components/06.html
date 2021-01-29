@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      const data = [
+        {
+          title: "Total",
+          number: 10358,
+          percentage: "+ 3%",
+        },
+        {
+          title: "Direct",
+          number: 8560,
+          percentage: "+ 10%",
+        },
+        {
+          title: "Referral",
+          number: 1798,
+          percentage: "- 1%",
+        },
+      ];
+
+      const data2 = [
+        {
+          title: "Total",
+          number: 5,
+          percentage: "- 1%",
+        },
+        {
+          title: "Warnings",
+          number: 5,
+          percentage: "+ 1%",
+        },
+        {
+          title: "Fatal",
+          number: 0,
+          percentage: "0%",
+        },
+      ];
+
+      const Widget = (props) => {
+        return (
+          <div>
+            <h2>{props.title}</h2>
+            <img width="30" height="30" src={props.logo} />
+            {props.data.map((entry) => {
+              return (
+                <div key={entry.title}>
+                  <h3>{entry.title}</h3>
+                  <p>
+                    {entry.number} &nbsp;<span>{entry.percentage}</span>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        );
+      };
+
+      const App = () => {
+        return (
+          <div>
+            <Widget
+              title="Website traffic"
+              logo="https://image.flaticon.com/icons/svg/148/148767.svg"
+              data={data}
+            />
+            <Widget
+              title="Website errors"
+              logo="https://image.flaticon.com/icons/svg/148/148836.svg"
+              data={data2}
+            />
+          </div>
+        );
+      };
+
+      ReactDOM.render(<App />, rootElement);
+    </script>
+  </body>
+</html>
