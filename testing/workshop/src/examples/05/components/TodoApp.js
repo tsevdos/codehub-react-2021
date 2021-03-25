@@ -7,7 +7,6 @@ import TodoItem from "./TodoItem";
 const TodoApp = () => {
   const { todos, input } = useSelector((state) => state);
   const dispatch = useDispatch();
-
   const addToDo = (e) => {
     e.preventDefault();
     const todo = { id: todos.length + 1, title: input, done: false };

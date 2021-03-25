@@ -3,7 +3,7 @@ describe("Todo app", () => {
   it("contains correct titles", () => {
     cy.visit("http://localhost:3000/05");
 
-    cy.contains("Testing");
+    cy.contains("React Testing");
     cy.contains("My ToDos");
   });
 
